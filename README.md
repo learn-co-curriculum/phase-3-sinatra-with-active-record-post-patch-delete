@@ -28,9 +28,9 @@ establishing routes and accessing data in our Sinatra application.
 We'll continue working on the game review application from the previous lessons.
 To get set up, run:
 
-```sh
-bundle install
-bundle exec rake db:migrate db:seed
+```console
+$ bundle install
+$ bundle exec rake db:migrate db:seed
 ```
 
 As a reminder, here's what the relationships will look like in our ERD:
@@ -39,8 +39,8 @@ As a reminder, here's what the relationships will look like in our ERD:
 
 Then, run the server with our new Rake task:
 
-```sh
-bundle exec rake server
+```console
+$ bundle exec rake server
 ```
 
 With that set up, let's start working on some CRUD!
