@@ -12,13 +12,13 @@ So far, we've seen how to set up an API with Sinatra to allow frontend
 applications to access data from a database in a JSON format. For many
 applications, just being able to access/read data isn't enough — what kind of
 app would Twitter be if you couldn't write posts? What would Instagram be if you
-couldn't like photos? How embarrasing would Facebook be if you couldn't go back
+couldn't like photos? How embarrassing would Facebook be if you couldn't go back
 and delete those regrettable high school photos?
 
 All of those applications, and most web apps, can be broadly labeled as CRUD
 applications — they allow users to Create, Read, Update, and Delete information.
 
-We've seen how a few ways to Read data in an API. We've also already seen how to
+We've seen a few ways to Read data in an API. We've also already seen how to
 Create/Update/Delete records from a database using Active Record. All that's
 left is to connect what we know from Active Record with some new techniques for
 establishing routes and accessing data in our Sinatra application.
@@ -118,7 +118,7 @@ Let's use Postman instead. Try it out:
 
 ![Postman Delete Request](https://curriculum-content.s3.amazonaws.com/phase-3/sinatra-with-active-record-post-patch-delete/postman-delete.png)
 
-This is essentially doing the same as writing this `fetch` call:
+This is essentially doing the same thing as this `fetch` call:
 
 ```js
 fetch(`http://localhost:9292/reviews/1`, {
