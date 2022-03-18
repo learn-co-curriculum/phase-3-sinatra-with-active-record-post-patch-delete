@@ -134,6 +134,9 @@ the record from the database:
 DELETE FROM "reviews" WHERE "reviews"."id" = 1
 ```
 
+**NOTE:** You can seed the database again by running `rake db:seed` if you
+wish to play around with the initial data.
+
 ## Handling POST Requests
 
 For our next feature, let's give our users the ability to **Create** new reviews.
