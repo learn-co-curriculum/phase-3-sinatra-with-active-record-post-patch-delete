@@ -33,9 +33,12 @@ GEM
     minitest (5.14.4)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    nio4r (2.7.3)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
+    puma (6.4.2)
+      nio4r (~> 2.0)
     rack (2.2.3)
     rack-contrib (2.3.0)
       rack (~> 2.0)
@@ -73,13 +76,15 @@ GEM
     sinatra-activerecord (2.0.23)
       activerecord (>= 4.1)
       sinatra (>= 1.0)
-    sqlite3 (1.4.2)
+    sqlite3 (1.7.3-arm64-darwin)
+    sqlite3 (1.7.3-x86_64-darwin)
     tilt (2.0.10)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     zeitwerk (2.4.2)
 
 PLATFORMS
+  arm64-darwin-23
   universal-darwin-20
 
 DEPENDENCIES
@@ -87,6 +92,7 @@ DEPENDENCIES
   database_cleaner
   faker (~> 2.18)
   pry
+  puma
   rack-contrib (~> 2.3)
   rack-test (~> 1.1)
   rake
@@ -96,7 +102,7 @@ DEPENDENCIES
   rspec-json_expectations (~> 2.2)
   sinatra (~> 2.1)
   sinatra-activerecord
-  sqlite3 (~> 1.4)
+  sqlite3 (~> 1.7)
 
 BUNDLED WITH
    2.2.23
