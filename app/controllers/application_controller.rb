@@ -16,4 +16,10 @@ class ApplicationController < Sinatra::Base
     })
   end
 
+  delete '/reviews/:id' do 
+    review = Review.find(params[:id])
+    review.destroy 
+    review.to_json 
+  end
+
 end
