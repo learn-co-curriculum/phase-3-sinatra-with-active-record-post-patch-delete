@@ -12,10 +12,6 @@ gem "activerecord", "~> 6.1"
 # https://github.com/sinatra-activerecord/sinatra-activerecord
 gem "sinatra-activerecord"
 
-# Rack middleware. Used specifically for parsing the request body into params.
-# https://github.com/rack/rack-contrib
-gem "rack-contrib", "~> 2.3"
-
 # Run common tasks from the command line
 # https://github.com/ruby/rake
 gem "rake"
@@ -27,6 +23,24 @@ gem "sqlite3", "~> 1.4"
 # Require all files in a folder
 # https://github.com/jarmo/require_all
 gem "require_all"
+
+gem 'require_all'
+
+# Logger for Ruby 3.3+ compatibility
+gem 'logger'
+
+# Additional Ruby 3.3+ compatibility gems
+gem 'base64'
+gem 'bigdecimal'
+gem 'mutex_m'
+gem 'ostruct'
+
+# JSON body parser for Rack
+gem 'rack-contrib'
+
+# Web servers
+gem 'puma'
+gem 'webrick'
 
 # These gems will only be used when we are running the application locally
 group :development do
@@ -43,10 +57,9 @@ end
 
 # These gems will only be used when we are running tests
 group :test do
-  gem "database_cleaner"
-  gem "rspec"
-  gem "rack-test", "~> 1.1"
-  gem "rspec-json_expectations", "~> 2.2"
+  gem 'database_cleaner'
+  gem 'rack-test', '~> 1.1'
+  gem 'rspec'
+  gem 'rspec-json_expectations'
+  gem 'rubocop'
 end
-
-
